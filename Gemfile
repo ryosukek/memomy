@@ -16,6 +16,8 @@ gem 'normalize_rails'
 
 gem 'materialize-sass'
 
+gem 'jquery-turbolinks' 
+
 group :development, :test do
   gem 'byebug'
 end
