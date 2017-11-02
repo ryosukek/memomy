@@ -18,6 +18,8 @@ gem 'materialize-sass'
 
 gem 'jquery-turbolinks'
 
+gem 'devise'
+
 
 group :development, :test do
   gem 'byebug'

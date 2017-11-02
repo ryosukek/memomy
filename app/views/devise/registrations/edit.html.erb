@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card-panel">
+      <h2 class="center">プロフィール編集</h2>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+
+        <!-- Get user email -->
+        <div class="input-field">
+          <%= f.label :email, "メールアドレス" %>
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <!-- Get user password current -->
+        <div class="input-field">
+          <%= f.label :current_password, "現在のパスワード" %>
+          <%= f.password_field :current_password, autocomplete: "off" %>
+        </div>
+
+        <!-- Get user password -->
+        <div class="input-field">
+          <%= f.label :password, "新しいパスワード" %>
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <!-- Get user password confirmation -->
+        <div class="input-field">
+          <%= f.label :password_confirmation, "新しいパスワード確認"%>
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+
+        <!-- Submit form -->
+        <div class="input-field center">
+          <%= f.submit "登録", class: "btn" %>
+        </div>
+
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div> 
