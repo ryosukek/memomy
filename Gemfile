@@ -20,7 +20,13 @@ gem 'jquery-turbolinks'
 
 gem 'devise'
 
-gem 'pundit' 
+gem 'pundit'
+
+# for image attachments
+gem 'paperclip'
+
+# for WYSIWYG editor
+gem 'ckeditor'
 
 
 group :development, :test do
