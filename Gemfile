@@ -20,6 +20,8 @@ gem 'jquery-turbolinks'
 
 gem 'devise'
 
+gem 'pundit' 
+
 
 group :development, :test do
   gem 'byebug'
