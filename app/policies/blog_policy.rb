@@ -17,5 +17,4 @@ class BlogPolicy
   def update?
     @blog.user == current_user
   end
-  
 end
