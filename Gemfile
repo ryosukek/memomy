@@ -39,3 +39,7 @@ end
 # group :development do
 # end
 gem 'mysql2', '>= 0.3.18'
+
+group :production do
+  gem 'rails_12factor'
+end
